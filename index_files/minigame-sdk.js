@@ -4286,7 +4286,7 @@ please click the button.`, e.btnFunc = () => {
 					var e = new URLSearchParams(window.location.search);
 					let t = "minigame.json",
 						s = !1;
-					//console.log(e.has("mn_config") && (t = e.get("mn_config"), console.debug("[minigame] config: ", t), s = !0), !s && e.has("mn_channel") && (e = e.get("mn_channel"), console.debug("[minigame] channel: ", e), t = e + "-config.json"), t)
+					//console.log(e.has("mn_config") && (t = e.get("mn_config"), console.debug("[minigame] config: ", t), s = !0), !s && e.has("mn_channel") && (e = e.get("mn_channel"), console.debug("[minigame] channel: ", e), t = e + ".json"), t)
 					return e.has("mn_config") && (t = e.get("mn_config"), console.debug("[minigame] config: ", t), s = !0), !s && e.has("mn_channel") && (e = e.get("mn_channel"), console.debug("[minigame] channel: ", e), t = e + ".json"), t
 				}();
 				return window.AdInteractive ? (n = s, e = yield new Promise((t, s) => {
