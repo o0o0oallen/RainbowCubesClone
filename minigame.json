@@ -1,6 +1,6 @@
 {
   "platform": "minigame",
-  "sdk": "https://v6p9d9t4.ssl.hwcdn.net/html/8182373/index_files/minigame-sdk.js",
+  "sdk": "minigame-sdk.js",
   "instance": "FBInstant",
   "gameName": "rainbow-cubes",
   "features": {
