@@ -3391,7 +3391,7 @@ digest: ` + r, "HMACSHA512-SecretKey")),
 		},
 		si = {
 			platform: oi.LOCAL,
-			sdk: "./minigame-sdk.js",
+			sdk: "./index_files/minigame-sdk.js",
 			instance: "FBInstant",
 			gameName: "minigame",
 			features: {
