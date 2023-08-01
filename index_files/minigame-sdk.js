@@ -4286,12 +4286,10 @@ please click the button.`, e.btnFunc = () => {
 					var e = new URLSearchParams(window.location.search);
 					let t = "minigame.json",
 						s = !1;
-					//console.log(e.has("mn_config") && (t = e.get("mn_config"), console.debug("[minigame] config: ", t), s = !0), !s && e.has("mn_channel") && (e = e.get("mn_channel"), console.debug("[minigame] channel: ", e), t = e + ".json"), t)
 					return e.has("mn_config") && (t = e.get("mn_config"), console.debug("[minigame] config: ", t), s = !0), !s && e.has("mn_channel") && (e = e.get("mn_channel"), console.debug("[minigame] channel: ", e), t = e + ".json"), t
 				}();
 				return window.AdInteractive ? (n = s, e = yield new Promise((t, s) => {
 					const r = new XMLHttpRequest;
-					console.log(n)
 					r.open("GET", n), r.onload = function () {
 						var e;
 						200 === r.status ? (e = JSON.parse(r.responseText), console.info("config loaded:", e), t(e)) : s({
@@ -4304,7 +4302,7 @@ please click the button.`, e.btnFunc = () => {
 					}, r.send()
 				}), Promise.resolve(e)) : (t = yield (yield fetch(s)).json(), Promise.resolve(t))
 			} catch (e) {
-				/*return console.error("[minigame] load minigame option error: ", e), Promise.reject(e)*/
+				return console.error("[minigame] load minigame option error: ", e), Promise.reject(e)
 			}
 			var n
 		})
