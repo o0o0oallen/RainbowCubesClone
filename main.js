@@ -8,11 +8,9 @@ window.boot = function () {
     var MAIN = cc.AssetManager.BuiltinBundleName.MAIN;
     function setLoadingDisplay () {
         // Loading splash scene
-        console.log("load splash di ae oi")
         var splash = document.getElementById('splash');
         var progressBar = splash.querySelector('.progress-bar span');
         onProgress = function (finish, total) {
-            console.log("update progress")
             var percent = 100 * finish / total;
             if (progressBar) {
                 progressBar.style.width = percent.toFixed(2) + '%';
