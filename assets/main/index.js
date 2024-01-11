@@ -449,6 +449,7 @@ window.__require = function e(t, o, n) {
 					}) : console.info("\u63d2\u5c4f\u5e7f\u544a\u6ca1\u6709\u52a0\u8f7d\u6210\u529f\uff0c\u65e0\u6cd5\u64ad\u653e"))
 				},
 				showRewardedVideo: function (e) {
+					console.info("show reward here")
 					/*if (!window.MiniGameAds)*/
 					return e && e();
 					MiniGameAds.isRewardvideoReady() ? (o.pauseMusic(), MiniGameAds.showRewardedVideo().then(function () {
